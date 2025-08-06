@@ -141,12 +141,58 @@ body, #main-content {
 }
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+  #hero .col-lg-3 {
+    justify-content: center !important;
+    margin-bottom: 1.5rem !important;
+  }
+  #hero .col-lg-4, #hero .col-lg-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center !important;
+    align-items: center !important;
   }
   #hero .col-lg-5 {
-    align-items: flex-start !important;
-    text-align: left !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
+  #hero img.rounded-circle {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  #left-email, #right-progress {
+    display: none !important;
+  }
+  section, .container, .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero img.rounded-circle {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  #hero h1 {
+    font-size: 1.3rem;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 56px;
 }
 
 #about {
