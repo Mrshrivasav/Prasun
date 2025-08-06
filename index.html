@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasun's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Intro Splash -->
+  <div id="intro" class="fixed inset-0 flex items-center justify-center bg-black z-50">
+    <h1 class="text-7xl md:text-9xl font-extrabold text-gray-200 tracking-widest">PRASUN SHRIVASTAV</h1>
+  </div>
+
+  <!-- Main Content -->
+  <canvas id="particle-bg"></canvas>
+  <div id="main-content" style="display:none;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">Prasun</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link text-white" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#blogs">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center bg-transparent" id="hero">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
+            <img src="/One%20new/prasun-profile.jpg" alt="Prasun Shrivastav" class="rounded-circle shadow" style="width: 360px; height: 360px; object-fit: cover; border: 4px solid #00ff6a; background: #18191A;" />
+          </div>
+          <div class="col-lg-4 col-md-12 py-5 ps-lg-5">
+            <h1 class="fw-extrabold mb-0" style="font-size:4rem; line-height:1.1;">
+              <span class="text-green-400" style="font-weight:900;">PROFESSIONAL</span><br>
+              <span class="text-gray-200" style="font-weight:900;">TRADER</span>
+            </h1>
+            <p class="mt-4 mb-4 fs-5 text-gray-300" style="max-width: 500px;">
+              Hi! I'm <span class="fw-bold">Prasun Shrivastav</span>. I specialize in algorithmic and discretionary trading across equities, forex, and crypto markets. My focus is on disciplined strategy, risk management, and consistent results.
+            </p>
+            <a href="#contact" class="btn btn-success btn-lg px-5 py-2 fw-bold" style="background:#00ff6a; color:#18191A; border:none;">CONNECT</a>
+          </div>
+          <div class="col-lg-5 col-md-12 d-flex flex-column align-items-end justify-content-center py-5 pe-lg-5">
+            <div class="text-end mb-4">
+              <span class="d-block text-green-400 fw-bold" style="font-size:2rem;">5+</span>
+              <span class="text-gray-400">Years Trading</span>
+            </div>
+            <div class="text-end mb-4">
+              <span class="d-block text-green-400 fw-bold" style="font-size:2rem;">1000+</span>
+              <span class="text-gray-400">Trades Executed</span>
+            </div>
+            <div class="text-end">
+              <span class="d-block text-green-400 fw-bold" style="font-size:2rem;">4</span>
+              <span class="text-gray-400">Markets Traded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="container-fluid py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-5">
+          <h2 class="display-5 fw-bold text-white text-center" style="font-size:2.5rem;">I believe in disciplined, data-driven trading—balancing risk and reward to achieve consistent results in dynamic markets.</h2>
+        </div>
+        <div class="col-lg-10">
+          <div class="row align-items-start">
+            <div class="col-md-5 mb-4">
+              <span class="text-green-400 fw-bold">This is me.</span>
+              <h3 class="fw-bold text-white mt-2 mb-3" style="font-size:2rem;">Hi, I'm Prasun Shrivastav.</h3>
+            </div>
+            <div class="col-md-7 text-gray-300 fs-5">
+              I'm a professional trader with a passion for financial markets and quantitative strategies. Over the years, I've developed and refined trading systems for equities, forex, and crypto, focusing on technical analysis, algorithmic trading, and risk management.<br><br>
+              My approach is rooted in continuous learning, backtesting, and adapting to ever-changing market conditions. I strive to deliver consistent returns while managing risk and leveraging the latest tools and technologies in trading.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container-fluid py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+              <h2 class="fw-extrabold text-gray-200 mb-4" style="font-size:2.2rem;">TRADING SKILLS</h2>
+              <div class="d-flex flex-wrap gap-4">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" width="48" alt="Technical Analysis chart icon">
+                  <span class="text-gray-300 mt-2">Technical Analysis</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2721/2721298.png" width="48" alt="Algorithmic Trading code icon">
+                  <span class="text-gray-300 mt-2">Algorithmic Trading</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="48" alt="Risk Management shield icon">
+                  <span class="text-gray-300 mt-2">Risk Management</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" width="48" alt="Portfolio Diversification pie chart icon">
+                  <span class="text-gray-300 mt-2">Portfolio Diversification</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" width="48" alt="Market Research magnifier icon">
+                  <span class="text-gray-300 mt-2">Market Research</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135766.png" width="48" alt="Trading Psychology brain icon">
+                  <span class="text-gray-300 mt-2">Trading Psychology</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+              <h2 class="fw-extrabold text-gray-200 mb-4" style="font-size:2.2rem;">PLATFORMS & TOOLS</h2>
+              <div class="d-flex flex-wrap gap-4">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/MetaTrader_Logo.png" width="48" alt="MetaTrader platform icon">
+                  <span class="text-gray-300 mt-2">MetaTrader</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://assets.tradingview.com/static/images/favicon.ico" width="48" alt="TradingView platform icon">
+                  <span class="text-gray-300 mt-2">TradingView</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="48" alt="Python programming icon">
+                  <span class="text-gray-300 mt-2">Python</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="48" alt="Excel spreadsheet icon">
+                  <span class="text-gray-300 mt-2">Excel</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <h2 class="fw-extrabold text-gray-200 mb-4" style="font-size:2.2rem;">MARKETS</h2>
+              <div class="d-flex flex-wrap gap-4">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135766.png" width="48" alt="Equities stock icon">
+                  <span class="text-gray-300 mt-2">Equities</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135767.png" width="48" alt="Forex currency icon">
+                  <span class="text-gray-300 mt-2">Forex</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/825/825519.png" width="48" alt="Crypto coin icon">
+                  <span class="text-gray-300 mt-2">Crypto</span>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135770.png" width="48" alt="Options contract icon">
+                  <span class="text-gray-300 mt-2">Options</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container my-5">
+      <h2 class="fw-bold text-center mb-4 text-white" style="font-size:2rem;">Trading Portfolios</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Equity Portfolio">
+            <div class="card-body">
+              <h5 class="card-title text-green-400">Equity Portfolio</h5>
+              <p class="card-text">A diversified portfolio of blue-chip and growth stocks, managed with a blend of technical and fundamental analysis for long-term returns.</p>
+              <a href="#" class="btn btn-success btn-sm" style="background:#00ff6a; color:#18191A; border:none;">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Forex Portfolio">
+            <div class="card-body">
+              <h5 class="card-title text-green-400">Forex Portfolio</h5>
+              <p class="card-text">Active trading of major and minor currency pairs using algorithmic strategies and real-time market analysis for optimal entry and exit points.</p>
+              <a href="#" class="btn btn-success btn-sm" style="background:#00ff6a; color:#18191A; border:none;">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Crypto Portfolio">
+            <div class="card-body">
+              <h5 class="card-title text-green-400">Crypto Portfolio</h5>
+              <p class="card-text">A balanced mix of leading cryptocurrencies and altcoins, managed with a focus on volatility, momentum, and blockchain trends.</p>
+              <a href="#" class="btn btn-success btn-sm" style="background:#00ff6a; color:#18191A; border:none;">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Options Portfolio">
+            <div class="card-body">
+              <h5 class="card-title text-green-400">Options Portfolio</h5>
+              <p class="card-text">Strategic use of options contracts for hedging and speculation, including covered calls, spreads, and volatility-based trades.</p>
+              <a href="#" class="btn btn-success btn-sm" style="background:#00ff6a; color:#18191A; border:none;">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="container my-5">
+      <h2 class="fw-bold text-center mb-4 text-white" style="font-size:2rem;">Blogs</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a href="https://www.investopedia.com/articles/trading/06/marketpsychology.asp" target="_blank" class="text-decoration-none">
+            <div class="card h-100 shadow-sm bg-dark text-white">
+              <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Market Psychology Blog">
+              <div class="card-body">
+                <h5 class="card-title text-green-400">Understanding Market Psychology</h5>
+                <p class="card-text">Explore how emotions and crowd behavior influence trading decisions and market trends.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.babypips.com/learn/forex/technical-analysis" target="_blank" class="text-decoration-none">
+            <div class="card h-100 shadow-sm bg-dark text-white">
+              <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Technical Analysis Blog">
+              <div class="card-body">
+                <h5 class="card-title text-green-400">Technical Analysis Basics</h5>
+                <p class="card-text">A beginner's guide to reading charts, identifying trends, and using indicators in trading.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.tradingview.com/blog/en/" target="_blank" class="text-decoration-none">
+            <div class="card h-100 shadow-sm bg-dark text-white">
+              <img src="https://media.istockphoto.com/id/1465618017/photo/businessmen-investor-think-before-buying-stock-market-investment-using-smartphone-to-analyze.jpg?s=612x612&w=0&k=20&c=YNEkfoME1jbz6FUJImxCQtaGZZntrf7u-Byxmgk4pOY=" class="card-img-top" alt="TradingView Blog Chart">
+              <div class="card-body">
+                <h5 class="card-title text-green-400">TradingView Strategies</h5>
+                <p class="card-text">Discover powerful strategies and scripts shared by the TradingView community.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-primary text-white py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Contact Me</h2>
+        <p class="mb-4">Feel free to reach out for collaborations or just a friendly hello!</p>
+        <form class="mx-auto p-4 rounded shadow bg-white text-dark" style="max-width: 400px;">
+          <div class="mb-3 text-start">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="darkprasun1234@gmail.com" required>
+          </div>
+          <button type="submit" class="btn btn-success w-100 fw-bold" style="background:#00ff6a; color:#18191A; border:none;">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; 2024 Prasun. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Left-side vertical email bar -->
+  <div id="left-email" class="fixed left-0 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center">
+    <a href="mailto:darkprasun1234@gmail.com" class="text-gray-300 hover:text-green-400 text-sm tracking-widest rotate-90 mb-4">darkprasun1234@gmail.com</a>
+    <div class="w-0.5 h-24 bg-gray-600"></div>
+  </div>
+
+  <!-- Right-side vertical progress bar -->
+  <div id="right-progress" class="fixed right-4 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center">
+    <div class="w-1 h-48 bg-gray-700 rounded-full relative">
+      <div id="progress-bar" class="absolute left-0 top-0 w-1 bg-green-400 rounded-full" style="height: 0;"></div>
+    </div>
+  </div>
+
+  <!-- Scripts at the end -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+/* Custom styles for Aman Portfolio */
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transition: all 0.2s;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+footer {
+  font-size: 1rem;
+}
+
+#intro {
+  transition: opacity 1s;
+}
+#intro.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body, #main-content {
+  background: #18191A !important;
+  color: #f3f3f3;
+}
+
+#particle-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+}
+
+#main-content {
+  position: relative;
+  z-index: 1;
+}
+
+#left-email {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#left-email a {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #b0b0b0;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+  font-size: 0.95rem;
+  transform: none;
+}
+#left-email a:hover {
+  color: #00ff6a;
+}
+#left-email .w-0.5 {
+  width: 2px;
+  height: 96px;
+  background: #444;
+}
+
+#right-progress {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#right-progress .w-1 {
+  width: 6px;
+  height: 192px;
+  background: #333;
+  border-radius: 3px;
+  position: relative;
+}
+#progress-bar {
+  width: 6px;
+  background: #00ff6a;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  transition: height 0.2s;
+}
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+#hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+#hero .text-green-400 {
+  color: #00ff6a !important;
+}
+#hero .text-gray-200 {
+  color: #e5e7eb !important;
+}
+#hero .text-gray-300 {
+  color: #d1d5db !important;
+}
+#hero .text-gray-400 {
+  color: #9ca3af !important;
+}
+#hero .btn-success {
+  background: #00ff6a !important;
+  color: #18191A !important;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 16px 0 #00ff6a33;
+  transition: background 0.2s, color 0.2s;
+}
+#hero .btn-success:hover {
+  background: #00cc55 !important;
+  color: #fff !important;
+}
+@media (max-width: 991px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  #hero .col-lg-5 {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+}
+
+#about {
+  background: transparent;
+  color: #f3f3f3;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+#about h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+#about .text-green-400 {
+  color: #00ff6a !important;
+}
+#about .text-gray-300 {
+  color: #d1d5db !important;
+}
+#about .row.align-items-start {
+  align-items: flex-start !important;
+}
+
+#skills {
+  background: transparent;
+  color: #f3f3f3;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#skills h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#skills .text-gray-300 {
+  color: #d1d5db !important;
+}
+#skills .fw-extrabold {
+  font-weight: 900 !important;
+}
+#skills .d-flex.flex-column.align-items-center {
+  min-width: 90px;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#skills img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 8px #2226);
+}
+#skills .gap-4 {
+  gap: 2rem !important;
+}
+#skills .row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#skills .d-flex.flex-wrap {
+  justify-content: center;
+}
+#skills span {
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+  #about h2 {
+    font-size: 1.5rem;
+  }
+  #about h3 {
+    font-size: 1.2rem;
+  }
+  #skills h2 {
+    font-size: 1.2rem;
+  }
+  #skills img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.navbar-dark.bg-black {
+  background: #111 !important;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 2px 8px 0 #0004;
+}
+.navbar-dark .navbar-brand, .navbar-dark .nav-link {
+  color: #fff !important;
+}
+.navbar-dark .nav-link.active, .navbar-dark .nav-link:focus, .navbar-dark .nav-link:hover {
+  color: #00ff6a !important;
+  text-decoration: underline;
+}
