@@ -9,13 +9,25 @@ links.forEach(link => {
       // Collapse navbar on mobile
       const navbar = document.querySelector('.navbar-collapse');
       if (navbar.classList.contains('show')) {
-        new bootstrap.Collapse(navbar).toggle();
+        const bsCollapse = new bootstrap.Collapse(navbar, {toggle: false});
+        bsCollapse.hide();
       }
     }
   });
 });
 
 window.addEventListener('DOMContentLoaded', () => {
+  // Initialize Bootstrap components
+  if (typeof bootstrap !== 'undefined') {
+    // Initialize all collapse components
+    const collapseElements = document.querySelectorAll('.collapse');
+    collapseElements.forEach(collapseEl => {
+      new bootstrap.Collapse(collapseEl, {
+        toggle: false
+      });
+    });
+  }
+
   // Intro Splash logic
   const intro = document.getElementById('intro');
   const main = document.getElementById('main-content');

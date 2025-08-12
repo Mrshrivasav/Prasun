@@ -139,6 +139,8 @@ body, #main-content {
   background: #00cc55 !important;
   color: #fff !important;
 }
+
+/* Improved Mobile Responsiveness */
 @media (max-width: 991px) {
   #hero h1 {
     font-size: 2.2rem;
@@ -170,6 +172,34 @@ body, #main-content {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+  
+  /* Navbar improvements for mobile */
+  .navbar-collapse {
+    background: #111 !important;
+    border-top: 1px solid #222;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem !important;
+    border-bottom: 1px solid #222;
+  }
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+  .navbar-toggler {
+    border: 1px solid #333 !important;
+    padding: 0.25rem 0.5rem;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 106, 0.25) !important;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -182,6 +212,26 @@ body, #main-content {
   }
   .navbar-brand {
     font-size: 1.2rem;
+  }
+  
+  /* Additional mobile improvements */
+  .container, .container-fluid {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  #hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  #hero p {
+    font-size: 0.9rem !important;
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1.5rem !important;
+    font-size: 0.9rem !important;
   }
 }
 
@@ -298,4 +348,39 @@ body {
 .navbar-dark .nav-link.active, .navbar-dark .nav-link:focus, .navbar-dark .nav-link:hover {
   color: #00ff6a !important;
   text-decoration: underline;
+}
+
+/* Ensure navbar collapse works properly */
+.navbar-collapse.collapse:not(.show) {
+  display: none !important;
+}
+
+.navbar-collapse.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.navbar-collapse.collapse.show {
+  display: block !important;
+}
+
+/* Fix for mobile navbar spacing */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    margin: 0;
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
 }
